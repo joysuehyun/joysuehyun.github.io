@@ -3,77 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>현지수(HYUN JISOO) | 가야금 & 교육 포트폴리오</title>
+    <title>현지수 | 포트폴리오</title>
     <style>
-        :root {
-            --bg-color: #fcfaf5;
-            --point-color: #a68b5b;
-            --text-color: #333;
-            --card-bg: #ffffff;
-        }
-        body { font-family: 'Pretendard', 'Apple SD Gothic Neo', sans-serif; background-color: var(--bg-color); color: var(--text-color); line-height: 1.6; margin: 0; padding: 0; }
-        header { background: white; padding: 60px 20px; text-align: center; border-bottom: 1px solid #eee; }
+        :root { --bg-color: #fcfaf5; --point-color: #a68b5b; --text-color: #333; }
+        body { font-family: 'Pretendard', sans-serif; background-color: var(--bg-color); margin: 0; }
+        
+        /* 네비게이션 메뉴 */
+        nav { background: white; padding: 15px; text-align: center; border-bottom: 1px solid #eee; position: sticky; top: 0; z-index: 100; }
+        nav a { margin: 0 15px; text-decoration: none; color: var(--text-color); font-weight: bold; }
+        nav a:hover { color: var(--point-color); }
+
+        header { padding: 60px 20px; text-align: center; background: white; }
         .container { max-width: 900px; margin: auto; padding: 20px; }
-        section { margin-bottom: 60px; }
-        h2 { border-left: 4px solid var(--point-color); padding-left: 15px; color: var(--point-color); margin-bottom: 30px; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
-        .card { background: var(--card-bg); padding: 20px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: 0.3s; }
-        .card:hover { transform: translateY(-5px); }
-        .card h3 { margin-top: 0; font-size: 1.1rem; }
-        .card p { font-size: 0.9rem; color: #666; }
-        .btn { display: inline-block; padding: 8px 16px; background: var(--point-color); color: white; text-decoration: none; border-radius: 6px; font-size: 0.85rem; margin-top: 10px; }
-        .badge-list { display: flex; flex-wrap: wrap; gap: 10px; }
-        .badge { background: #eee; padding: 5px 12px; border-radius: 20px; font-size: 0.85rem; }
+        .intro-card { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); text-align: center; }
     </style>
 </head>
 <body>
 
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="teaching.html">Teaching & Music</a>
+</nav>
+
 <header>
     <h1>HYUN JISOO</h1>
-    <p>고등학교 국어교사 · 가야금 연주자 · 교육 콘텐츠 크리에이터</p>
+    <p>고등학교 국어교사 · 가야금 연주자</p>
 </header>
 
 <div class="container">
-    <section id="about">
-        <h2>About Me</h2>
-        <p>전통의 소리를 이어가며, 더 쉬운 교육을 위해 고민합니다. 국어 수업과 가야금 선율을 통해 배움의 가치를 공유하고 있습니다.</p>
-        <div class="badge-list">
-            <span class="badge">고등학교 국어교사(2015~현재)</span>
-            <span class="badge">가야금 연주자</span>
-            <span class="badge">교육 자료 기획자</span>
-        </div>
-    </section>
-
-    <section id="high-school">
-        <h2>고등 수업 자료</h2>
-        <div class="grid">
-            <div class="card">
-                <h3>수업 영상</h3>
-                <p>문학 기출 문제를 상세하게 분석한 영상입니다.</p>
-                <a href="유튜브링크" target="_blank" class="btn">영상 보기</a>
-            </div>
-            <div class="card">
-                <h3>수업 자료</h3>
-                <p>수업 시간에 활용하는 핵심 정리 활동지입니다.</p>
-                <a href="구글드라이브링크" target="_blank" class="btn" style="background: #34a853;">Google Drive</a>
-            </div>
-        </div> </section>
-
-    <section id="gayageum">
-        <h2>가야금 연주 영상</h2>
-        <div class="grid">
-            <div class="card">
-                <h3>가야금 산조</h3>
-                <p>전통 가야금 선율을 감상해 보세요.</p>
-                <a href="유튜브링크" target="_blank" class="btn">YouTube 감상</a>
-            </div>
-            <div class="card">
-                <h3>창작 및 협주</h3>
-                <p>다양한 장르와 협업한 가야금 연주입니다.</p>
-                <a href="유튜브링크" target="_blank" class="btn">YouTube 감상</a>
-            </div>
-        </div>
-    </section>
+    <div class="intro-card">
+        <h2>반갑습니다!</h2>
+        <p>국어 수업과 가야금의 선율이 만나는 공간입니다.<br>상단 메뉴를 통해 저의 활동을 확인해 보세요.</p>
+    </div>
 </div>
 
 </body>
