@@ -1,22 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>현지수 | About Me</title>
+    <style>
+        :root { --bg-color: #fcfaf5; --point-color: #a68b5b; --text-color: #333; }
+        body { font-family: 'Pretendard', sans-serif; background-color: var(--bg-color); margin: 0; padding: 0; }
+        
+        /* 공통 메뉴바 */
+        nav { background: white; padding: 15px; text-align: center; border-bottom: 1px solid #eee; position: sticky; top: 0; z-index: 100; }
+        nav a { margin: 0 15px; text-decoration: none; color: var(--text-color); font-weight: bold; }
+        nav a:hover { color: var(--point-color); }
+
+        .container { max-width: 900px; margin: auto; padding: 40px 20px; }
+        h1, h2 { color: var(--point-color); }
+        h2 { border-left: 4px solid var(--point-color); padding-left: 15px; margin-top: 40px; }
+        
+        /* 목록 스타일링 */
+        ul { line-height: 2; color: #444; }
+        li { margin-bottom: 8px; }
+        .intro-text { font-size: 1.2rem; color: #555; margin-bottom: 30px; }
+    </style>
+</head>
+<body>
+
 <nav>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="teaching.html">Teaching</a>
-  <a href="writing.html">Writing</a>
-  <a href="music.html">Music</a>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="teaching.html">Teaching & Music</a>
 </nav>
-<h1>About</h1>
 
-<p>
-문학을 가르치며 사고의 구조를 설계합니다.
-</p>
+<div class="container">
+    <h1>About Me</h1>
+    <p class="intro-text">문학을 가르치며 사고의 구조를 설계합니다.</p>
 
-<h2>Education</h2>
-<ul>
-  <li>○○대학교 국어교육과</li>
-</ul>
+    <h2>학력</h2>
+    <ul>
+        <li>한국교원대학교 국어교육과 학사</li>
+        <li>한국교원대학교 일반대학원 국어교육전공 석사</li>
+        <li>제주대학교 교육대학원 일어교육전공 재학</li>
+    </ul>
 
-<h2>Certification</h2>
-<ul>
-  <li>중등 정교사 2급 (국어)</li>
-</ul>
+    <h2>경력 및 연구실적</h2>
+    <ul>
+        <li>제주특별자치도교육청 중등학교 교사(2015.03.~현재)</li>
+        <li>2024년 한국교육과정원 주관 교과용도서 검정(표기·표현) 위원 참여</li>
+        <li>제45회 제주학생과학발명품경진대회 학생작품지도논문연구대회 3등급 수상</li>
+        <li>2024년 수업혁신사례연구대회 제주예선대회 2등급 수상</li>
+        <li>제2회 한일 고교교사 교류사업 선발 교사</li>
+        <li>2025년 EBS 진로 학업 설계 컨설팅 지원단</li>
+    </ul>
+
+    <h2>Certification</h2>
+    <ul>
+        <li>중등 정교사 1급(국어)</li>
+        <li>JLPT 1급</li>
+        <li>초경량비행장치 조종자 무인컬티콥터/3종</li>
+    </ul>
+</div>
+
+</body>
+</html>
