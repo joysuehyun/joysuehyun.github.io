@@ -1,42 +1,63 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>현지수 | 포트폴리오</title>
-    <style>
-        :root { --bg-color: #fcfaf5; --point-color: #a68b5b; --text-color: #333; }
-        body { font-family: 'Pretendard', sans-serif; background-color: var(--bg-color); margin: 0; }
-        
-        /* 네비게이션 메뉴 */
-        nav { background: white; padding: 15px; text-align: center; border-bottom: 1px solid #eee; position: sticky; top: 0; z-index: 100; }
-        nav a { margin: 0 15px; text-decoration: none; color: var(--text-color); font-weight: bold; }
-        nav a:hover { color: var(--point-color); }
-
-        header { padding: 60px 20px; text-align: center; background: white; }
-        .container { max-width: 900px; margin: auto; padding: 20px; }
-        .intro-card { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); text-align: center; }
-    </style>
-</head>
-<body>
-
-<nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About Me</a>
-    <a href="teaching.html">Teaching & Music</a>
-</nav>
-
-<header>
-    <h1>HYUN JISOO</h1>
-    <p>고등학교 국어교사 · 가야금 연주자</p>
-</header>
-
 <div class="container">
-    <div class="intro-card">
-        <h2>반갑습니다!</h2>
-        <p>국어 수업과 가야금의 선율이 만나는 공간입니다.<br>상단 메뉴를 통해 저의 활동을 확인해 보세요.</p>
-    </div>
+    <section class="intro-section">
+        <h2 class="main-title">현지수(Hyun Jisoo)</h2>
+        
+        <p class="intro-text">
+            꽤 많은 날들을 웃으며 보내고 있습니다.<br>
+            다양한 경험으로 삶을 형형색색으로 물들이며,<br>
+            세상의 다채로운 면을 배워가고 있습니다.
+        </p>
+
+        <p class="intro-text">
+            오늘의 나에게 실망해도, 또다시 성찰하며,<br>
+            내일은 조금 더 나은 내가 될 거라고 믿으며 살아갑니다.
+        </p>
+
+        <p class="philosophy-text">
+            나, 그리고 내가 가르치는 아이들이 스스로를 사랑하고,<br>
+            지상의 모든 슬픔의 사각지대도 사랑으로 보살피는 어른이 될 수 있기를 바랍니다.
+        </p>
+
+        <div class="signature">
+            국어교사 · 교육콘텐츠 크리에이터 · 이것저것 Learner
+        </div>
+    </section>
 </div>
 
-</body>
-</html>
+<style>
+    .intro-section {
+        text-align: center;
+        background: white;
+        padding: 60px 40px;
+        border-radius: 24px;
+        box-shadow: 0 10px 40px rgba(0,0,0,0.03);
+        margin-top: 20px;
+    }
+    .main-title {
+        font-family: 'GyeonggiBatang', serif;
+        font-size: 1.6rem;
+        margin-bottom: 40px;
+        letter-spacing: -0.5px;
+        color: var(--point-color); /* 이름 색상을 포인트 컬러로 변경해 보았습니다 */
+    }
+    .intro-text {
+        font-size: 1.1rem;
+        line-height: 1.9;
+        color: #444;
+        margin-bottom: 25px;
+    }
+    .philosophy-text {
+        font-size: 1.15rem;
+        line-height: 1.9;
+        color: #a68b5b; /* --point-color 직접 입력 */
+        font-weight: 500;
+        margin-top: 30px;
+        word-break: keep-all;
+    }
+    .signature {
+        margin-top: 50px;
+        font-size: 0.9rem;
+        color: #999;
+        letter-spacing: 2px;
+    }
+</style>
