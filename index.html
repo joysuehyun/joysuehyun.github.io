@@ -1,3 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>현지수 | Home</title>
+    <style>
+        :root { --bg-color: #fcfaf5; --point-color: #a68b5b; --text-color: #333; }
+        body { font-family: 'Pretendard', sans-serif; background-color: var(--bg-color); margin: 0; padding: 0; }
+        
+        /* 공통 메뉴바 - 모든 페이지 동일 */
+        nav { background: white; padding: 15px; text-align: center; border-bottom: 1px solid #eee; position: sticky; top: 0; z-index: 100; }
+        nav a { margin: 0 15px; text-decoration: none; color: var(--text-color); font-weight: bold; }
+        nav a:hover { color: var(--point-color); }
+
+        .container { max-width: 900px; margin: auto; padding: 40px 20px; }
+
+        /* 자기소개 섹션 스타일 */
+        .intro-section {
+            text-align: center;
+            background: white;
+            padding: 60px 40px;
+            border-radius: 24px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.03);
+            margin-top: 20px;
+        }
+        .main-title {
+            font-size: 1.8rem;
+            margin-bottom: 40px;
+            letter-spacing: -0.5px;
+            color: var(--point-color);
+        }
+        .intro-text {
+            font-size: 1.1rem;
+            line-height: 1.9;
+            color: #444;
+            margin-bottom: 25px;
+        }
+        .philosophy-text {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: var(--point-color);
+            font-weight: 500;
+            margin-top: 30px;
+            word-break: keep-all;
+        }
+        .signature {
+            margin-top: 50px;
+            font-size: 0.9rem;
+            color: #999;
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="teaching.html">Teaching & Music</a>
+</nav>
+
 <div class="container">
     <section class="intro-section">
         <h2 class="main-title">현지수(Hyun Jisoo)</h2>
@@ -19,45 +81,11 @@
         </p>
 
         <div class="signature">
+            📖 🎻 🚁 🇯🇵 🧹 🎤<br><br>
             국어교사 · 교육콘텐츠 크리에이터 · 이것저것 Learner
         </div>
     </section>
 </div>
 
-<style>
-    .intro-section {
-        text-align: center;
-        background: white;
-        padding: 60px 40px;
-        border-radius: 24px;
-        box-shadow: 0 10px 40px rgba(0,0,0,0.03);
-        margin-top: 20px;
-    }
-    .main-title {
-        font-family: 'GyeonggiBatang', serif;
-        font-size: 1.6rem;
-        margin-bottom: 40px;
-        letter-spacing: -0.5px;
-        color: var(--point-color); /* 이름 색상을 포인트 컬러로 변경해 보았습니다 */
-    }
-    .intro-text {
-        font-size: 1.1rem;
-        line-height: 1.9;
-        color: #444;
-        margin-bottom: 25px;
-    }
-    .philosophy-text {
-        font-size: 1.15rem;
-        line-height: 1.9;
-        color: #a68b5b; /* --point-color 직접 입력 */
-        font-weight: 500;
-        margin-top: 30px;
-        word-break: keep-all;
-    }
-    .signature {
-        margin-top: 50px;
-        font-size: 0.9rem;
-        color: #999;
-        letter-spacing: 2px;
-    }
-</style>
+</body>
+</html>
