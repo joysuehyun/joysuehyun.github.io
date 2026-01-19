@@ -2,24 +2,88 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>Joysuehyun | Digital Card</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>joysuehyun | 가야금 & 교육 포트폴리오</title>
     <style>
-        body { font-family: 'Apple SD Gothic Neo', sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; background: #f0f2f5; }
-        .card { background: white; padding: 40px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); text-align: center; width: 300px; }
-        h1 { margin: 10px 0; color: #333; }
-        p { color: #666; margin-bottom: 20px; }
-        .link-button { display: block; background: #007aff; color: white; padding: 10px; margin: 10px 0; border-radius: 8px; text-decoration: none; transition: 0.3s; }
-        .link-button:hover { background: #0056b3; }
+        :root {
+            --bg-color: #fcfaf5;
+            --point-color: #a68b5b; /* 가야금 나무 느낌의 골드 브라운 */
+            --text-color: #333;
+            --card-bg: #ffffff;
+        }
+
+        body { font-family: 'Pretendard', 'Apple SD Gothic Neo', sans-serif; background-color: var(--bg-color); color: var(--text-color); line-height: 1.6; margin: 0; padding: 0; }
+        header { background: white; padding: 60px 20px; text-align: center; border-bottom: 1px solid #eee; }
+        .container { max-width: 900px; margin: auto; padding: 20px; }
+        
+        section { margin-bottom: 60px; }
+        h2 { border-left: 4px solid var(--point-color); padding-left: 15px; color: var(--point-color); margin-bottom: 30px; }
+
+        /* 카드 스타일 */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        .card { background: var(--card-bg); padding: 20px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: 0.3s; }
+        .card:hover { transform: translateY(-5px); }
+        .card h3 { margin-top: 0; font-size: 1.1rem; }
+        .card p { font-size: 0.9rem; color: #666; }
+        .btn { display: inline-block; padding: 8px 16px; background: var(--point-color); color: white; text-decoration: none; border-radius: 6px; font-size: 0.85rem; margin-top: 10px; }
+
+        /* 자격증 리스트 */
+        .badge-list { display: flex; flex-wrap: wrap; gap: 10px; }
+        .badge { background: #eee; padding: 5px 12px; border-radius: 20px; font-size: 0.85rem; }
     </style>
 </head>
 <body>
-    <div class="card">
-        <h1>👋 안녕하세요!</h1>
-        <p>기록하고 성장하는 joysuehyun입니다.</p>
-        <hr>
-        <a href="mailto:이메일주소" class="link-button">이메일 보내기</a>
-        <a href="https://github.com/joysuehyun" class="link-button">GitHub 구경하기</a>
-        <a href="#" class="link-button">인스타그램(준비중)</a>
-    </div>
+
+<header>
+    <h1>joysuehyun</h1>
+    <p>가야금 연주자이자 교육 콘텐츠 제작자입니다.</p>
+</header>
+
+<div class="container">
+    <section id="about">
+        <h2>About Me</h2>
+        <p>전통의 소리를 이어가며, 더 쉬운 교육을 위해 자료를 만듭니다. 가야금의 아름다움을 알리고 교육의 가치를 공유합니다.</p>
+        <div class="badge-list">
+            <span class="badge">가야금 연주자</span>
+            <span class="badge">문화예술교육사 2급</span>
+            <span class="badge">정교사 자격증</span>
+        </div>
+    </section>
+
+    <section id="gayageum">
+        <h2>가야금 연주 영상</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>가야금 산조 연주</h3>
+                <p>성금연류 산조를 연주한 영상입니다.</p>
+                <a href="유튜브링크넣기" target="_blank" class="btn">영상 보기</a>
+            </div>
+            <div class="card">
+                <h3>창작 곡 연주</h3>
+                <p>현대적인 감각으로 재해석한 가야금 연주입니다.</p>
+                <a href="유튜브링크넣기" target="_blank" class="btn">영상 보기</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="teaching">
+        <h2>수업 영상 & 교육 자료</h2>
+        <div class="grid">
+            <div class="card">
+                <span style="font-size: 0.8rem; color: var(--point-color); font-weight: bold;">[수업 영상]</span>
+                <h3>기초 이론 수업</h3>
+                <p>누구나 쉽게 배울 수 있는 국악 이론 강의입니다.</p>
+                <a href="유튜브링크" target="_blank" class="btn">YouTube</a>
+            </div>
+            <div class="card">
+                <span style="font-size: 0.8rem; color: #555; font-weight: bold;">[수업 자료]</span>
+                <h3>활동지: 국악기 알아보기</h3>
+                <p>초등학생 대상으로 제작된 그림 중심의 활동 자료입니다.</p>
+                <a href="구글드라이브링크" target="_blank" class="btn" style="background: #34a853;">Google Drive</a>
+            </div>
+        </div>
+    </section>
+</div>
+
 </body>
 </html>
