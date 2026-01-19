@@ -1,69 +1,14 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>현지수 | Home</title>
-    <style>
-        :root { --bg-color: #fcfaf5; --point-color: #a68b5b; --text-color: #333; }
-        body { font-family: 'Pretendard', sans-serif; background-color: var(--bg-color); margin: 0; padding: 0; }
-        
-        /* 공통 메뉴바 - 모든 페이지 동일 */
-        nav { background: white; padding: 15px; text-align: center; border-bottom: 1px solid #eee; position: sticky; top: 0; z-index: 100; }
-        nav a { margin: 0 15px; text-decoration: none; color: var(--text-color); font-weight: bold; }
-        nav a:hover { color: var(--point-color); }
-
-        .container { max-width: 900px; margin: auto; padding: 40px 20px; }
-
-        /* 자기소개 섹션 스타일 */
-        .intro-section {
-            text-align: center;
-            background: white;
-            padding: 60px 40px;
-            border-radius: 24px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.03);
-            margin-top: 20px;
-        }
-        .main-title {
-            font-size: 1.8rem;
-            margin-bottom: 40px;
-            letter-spacing: -0.5px;
-            color: var(--point-color);
-        }
-        .intro-text {
-            font-size: 1.1rem;
-            line-height: 1.9;
-            color: #444;
-            margin-bottom: 25px;
-        }
-        .philosophy-text {
-            font-size: 1.15rem;
-            line-height: 1.9;
-            color: var(--point-color);
-            font-weight: 500;
-            margin-top: 30px;
-            word-break: keep-all;
-        }
-        .signature {
-            margin-top: 50px;
-            font-size: 0.9rem;
-            color: #999;
-            letter-spacing: 2px;
-        }
-    </style>
-</head>
-<body>
-
-<nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About Me</a>
-    <a href="teaching.html">Teaching & Music</a>
-</nav>
-
 <div class="container">
     <section class="intro-section">
         <h2 class="main-title">현지수(Hyun Jisoo)</h2>
         
+        <div class="subtitle-area">
+            <div class="emoji-line">📖 🎻 🚁 🇯🇵 🧹 🎤</div>
+            <div class="job-title">국어교사 · 교육콘텐츠 크리에이터 · 이것저것 Learner</div>
+        </div>
+
+        <div class="photo-placeholder">Later, My Best Photo will be here! ✨</div>
+
         <p class="intro-text">
             꽤 많은 날들을 웃으며 보내고 있습니다.<br>
             다양한 경험으로 삶을 형형색색으로 물들이며,<br>
@@ -79,13 +24,25 @@
             나, 그리고 내가 가르치는 아이들이 스스로를 사랑하고,<br>
             지상의 모든 슬픔의 사각지대도 사랑으로 보살피는 어른이 될 수 있기를 바랍니다.
         </p>
-
-        <div class="signature">
-            📖 🎻 🚁 🇯🇵 🧹 🎤<br><br>
-            국어교사 · 교육콘텐츠 크리에이터 · 이것저것 Learner
-        </div>
     </section>
 </div>
 
-</body>
-</html>
+<style>
+    /* 추가/수정된 스타일 */
+    .subtitle-area {
+        margin-bottom: 40px;
+    }
+    .emoji-line {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+    .job-title {
+        font-size: 1rem;
+        color: #888;
+        letter-spacing: 1px;
+    }
+    .photo-placeholder {
+        width: 150px;
+        height: 150px;
+        background: #f0f0f0;
+        border:
